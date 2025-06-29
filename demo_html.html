@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Website - HTML, CSS & JavaScript Demo</title>
+    <!-- CSS will be linked here -->
+    <link rel="stylesheet" href="demo_css.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">MyWebsite</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Web Development</h1>
+                <p class="hero-subtitle">This website demonstrates HTML, CSS, and JavaScript working together</p>
+                <div class="demo-buttons">
+                    <button id="toggle-html" class="demo-btn">Show HTML Effect</button>
+                    <button id="toggle-css" class="demo-btn">Show CSS Effect</button>
+                    <button id="toggle-js" class="demo-btn">Show JavaScript Effect</button>
+                </div>
+                <div id="demo-output" class="demo-output"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Understanding Web Technologies</h2>
+                <div class="tech-grid">
+                    <div class="tech-card" id="html-card">
+                        <div class="tech-icon">🏗️</div>
+                        <h3>HTML</h3>
+                        <p>The structure and foundation of every website. Like the skeleton of a building.</p>
+                        <ul class="tech-features">
+                            <li>Creates the basic structure</li>
+                            <li>Defines content and layout</li>
+                            <li>Uses tags like &lt;h1&gt;, &lt;p&gt;, &lt;div&gt;</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card" id="css-card">
+                        <div class="tech-icon">🎨</div>
+                        <h3>CSS</h3>
+                        <p>The styling that makes websites beautiful. Like painting and decorating a house.</p>
+                        <ul class="tech-features">
+                            <li>Controls colors and fonts</li>
+                            <li>Creates layouts and spacing</li>
+                            <li>Makes websites responsive</li>
+                        </ul>
+                    </div>
+                    <div class="tech-card" id="js-card">
+                        <div class="tech-icon">⚡</div>
+                        <h3>JavaScript</h3>
+                        <p>The functionality that makes websites interactive. Like the electricity in a house.</p>
+                        <ul class="tech-features">
+                            <li>Handles user interactions</li>
+                            <li>Creates dynamic content</li>
+                            <li>Connects to databases</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Demo Section -->
+        <section id="services" class="demo-section">
+            <div class="container">
+                <h2 class="section-title">Interactive Demonstrations</h2>
+                
+                <!-- HTML Demo -->
+                <div class="demo-container">
+                    <h3>HTML in Action</h3>
+                    <p>Click to see how HTML structures content:</p>
+                    <div id="html-demo" class="demo-box">
+                        <p>This is a paragraph created with HTML.</p>
+                        <button id="add-html" class="action-btn">Add HTML Element</button>
+                    </div>
+                </div>
+
+                <!-- CSS Demo -->
+                <div class="demo-container">
+                    <h3>CSS in Action</h3>
+                    <p>Click to see how CSS changes appearance:</p>
+                    <div id="css-demo" class="demo-box">
+                        <div id="css-element" class="css-demo-element">I can be styled with CSS!</div>
+                        <button id="change-css" class="action-btn">Change CSS Style</button>
+                    </div>
+                </div>
+
+                <!-- JavaScript Demo -->
+                <div class="demo-container">
+                    <h3>JavaScript in Action</h3>
+                    <p>Click to see JavaScript create dynamic content:</p>
+                    <div id="js-demo" class="demo-box">
+                        <div id="js-output" class="js-output">JavaScript makes websites interactive!</div>
+                        <button id="run-js" class="action-btn">Run JavaScript</button>
+                        <button id="calculate" class="action-btn">Simple Calculator</button>
+                        <div id="calculator" class="calculator" style="display: none;">
+                            <input type="number" id="num1" placeholder="Enter first number">
+                            <select id="operator">
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                                <option value="*">×</option>
+                                <option value="/">/</option>
+                            </select>
+                            <input type="number" id="num2" placeholder="Enter second number">
+                            <button id="calc-result" class="action-btn">Calculate</button>
+                            <div id="result" class="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Ready to Start Learning?</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>This Website Shows You:</h3>
+                        <ul class="learning-points">
+                            <li>✅ How HTML creates structure</li>
+                            <li>✅ How CSS makes it beautiful</li>
+                            <li>✅ How JavaScript adds functionality</li>
+                            <li>✅ How all three work together</li>
+                            <li>✅ Responsive design for all devices</li>
+                        </ul>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Test the Contact Form</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message:</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                        <div id="form-response" class="form-response"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Web Development Demo. Built with HTML, CSS, and JavaScript.</p>
+            <p>This website demonstrates how the three core web technologies work together.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript will be linked here -->
+    <script src="demo_js.js"></script>
+</body>
+</html>
